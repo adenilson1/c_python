@@ -10,4 +10,5 @@ for digito in nove_digitos:
     resultado_1 +=(int(digito) * contador_regressivo_1)
     contador_regressivo_1 -=1
 primeiro_digito = (resultado_1 * 10)%11
+primeiro_digito = primeiro_digito if primeiro_digito <= 9 else 0
 print(primeiro_digito)
